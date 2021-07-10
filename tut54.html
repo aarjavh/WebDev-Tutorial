@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm anf prompt</title>
+</head>
+<body>
+    <div class="container">This is a page</div>
+
+    <script>
+        //Alert in in-browser JS - does not return any value
+        // alert("This is a message");
+
+        // let name = prompt("What is your name", "Guest");
+        // console.log("Hello " + name);
+
+        let deletePost = confirm("Are you sure?");
+        console.log(deletePost);
+
+        if(deletePost){
+            console.log("Your post is deleted");
+        }
+        else{
+            console.log("Your post is not deleted");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: rgb(228, 213, 194);
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 13px rgb(241, 213, 151); */
+            /* box-shadow: -10px -13px rgb(241, 213, 151); */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 10px 13px 13px rgb(241, 213, 151); */
+
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* rgb(red, green, blue, alpha(opacity)) */
+            /* box-shadow: 10px 13px 13px 4px rgb(241, 213, 151, 0.6); */
+            box-shadow: 3px 5px rgb(0, 0, 0), 7px 9px gray; 
+
+            /* In inset the shadows go inside the box */
+            /* box-shadow: inset 3px 5px rgb(179, 134, 37); */
+        }
+        .card h2{
+            /* text-shadow: 2px 1px rgb(139, 130, 130); */
+            text-shadow: 2px 1px 2px rgb(139, 130, 130);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+           <h2>This HTML course</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officiis voluptatum laudantium beatae, ratione fugiat ipsam quis, ipsum ad, architecto pariatur adipisci? Impedit dicta totam similique id omnis, nesciunt dolor ullam accusamus eligendi incidunt?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is CSS course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut numquam atque vero quaerat facere quam magnam. Nam saepe error, iure inventore harum libero fuga eum eligendi voluptatem reiciendis ipsam dolores accusamus temporibus maiores.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is JS course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sunt. Perferendis ducimus saepe dolores esse nihil modi rem deleniti nemo aliquam harum unde quia qui distinctio assumenda enim, voluptate ad ipsam debitis eveniet accusantium.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+show dbs
+use aarjavKart
+show collections
+
+db.items.updateOne({name: "Moto 30s"}, {$set: {price: 2}})
+db.items.updateOne({name: "Moto 30s"}, {$set: {name: "XOLO"}})
+db.items.find()
+db.items.updateMany({name: "XOLO"}, {$set: {rating: 2, price: 3}})

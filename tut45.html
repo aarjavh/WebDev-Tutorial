@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+         @media only screen and (max-width: 300px){
+            body{
+                background-color: red;
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'footer footer footer footer';
+            }
+            #aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            body{
+                background-color: blueviolet;
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'footer footer footer footer';
+            }
+            #aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 500px) and (max-width: 800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 800px){
+            body{
+                background-color: peachpuff;
+            }
+        }
+
+        .bdr{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: blanchedalmond;
+        }
+        
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ad exercitationem ipsum iusto totam a officiis amet in et quaerat. Quae vel sint, quo corrupti, provident distinctio quibusdam esse atque molestias ullam magnam numquam tempore! Quibusdam natus aliquid, minus incidunt quis magni tenetur animi fugit quasi esse, officia, voluptatem at laboriosam? Tenetur dignissimos non odit reiciendis impedit iste? Ab iste deserunt obcaecati laudantium ipsam temporibus quibusdam dicta quos ad esse sint ea distinctio sed odio voluptate autem, aut hic corporis dolorum, optio illum delectus repellat tenetur. Quas reiciendis pariatur nihil nostrum at laboriosam eligendi commodi dolores cupiditate officiis esse recusandae quo ipsam error, totam facere quam eveniet quod ex cum sed nemo accusamus! Officiis perferendis officia fugiat voluptatem cupiditate numquam, quo mollitia.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright 2021</footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: rgb(203, 240, 140);
+        }
+        .box{
+            background-color: greenyellow;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: aarjav1; */
+            animation-name: aarjav2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: alternate; */
+
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+
+            /* animation-delay: 2s; */
+
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+
+            /* animation: animation-name animation-duration timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            /* animation: harry 5s ease-in 1s 12 backwards; */
+        }
+        @keyframes aarjav2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 25 0px;
+            }
+        }
+        @keyframes aarjav1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

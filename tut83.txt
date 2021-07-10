@@ -1,0 +1,11 @@
+use aarjavKart
+
+db.item.find({rating: 22000})
+
+//Deleting items from mongoDB database
+db.items.deleteOne({price: 22000})
+
+// deleteOne will delete the matching document entry and will delete the first entry in case of multi document match
+
+db.deleteMany({price: 129000})
+// deleteMany will delete the matching document entry and will delete the all the entry in case of multi document match

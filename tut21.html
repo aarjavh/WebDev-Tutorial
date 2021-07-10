@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignement</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Roboto Mono', monospace;
+        }
+        .container{
+            width: 900px;
+            background-color: sandybrown;
+            border: 3px solid purple;
+            margin: 33px auto;
+        }
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(218, 153, 153);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+        p, h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi aut inventore eos reiciendis quisquam quis, recusandae itaque repellat magni atque veritatis dolorum accusantium rem id qui necessitatibus cum facere? Officiis nostrum vitae suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet excepturi odio corporis inventore? Praesentium, blanditiis at pariatur nobis, aliquid animi fugit accusamus natus explicabo veniam incidunt quae reiciendis consequuntur amet commodi quam debitis.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi aut inventore eos reiciendis quisquam quis, recusandae itaque repellat magni atque veritatis dolorum accusantium rem id qui necessitatibus cum facere? Officiis nostrum vitae suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam beatae quos eos, minima odio ad alias iste aut modi quod eveniet officia repellendus minus quo fugiat? Quod, perferendis? Praesentium exercitationem et possimus voluptatibus deleniti.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi aut inventore eos reiciendis quisquam quis, recusandae itaque repellat magni atque veritatis dolorum accusantium rem id qui necessitatibus cum facere? Officiis nostrum vitae suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad vero at fugit illo excepturi vel iste. Adipisci numquam repellat enim libero. Non eos quod aliquid. Eius veniam officia alias nisi ducimus nobis minus?
+            </p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Stationary</h3>
+            <p id="glassesPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi aut inventore eos reiciendis quisquam quis, recusandae itaque repellat magni atque veritatis dolorum accusantium rem id qui necessitatibus cum facere? Officiis nostrum vitae suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad vero at fugit illo excepturi vel iste. Adipisci numquam repellat enim libero. Non eos quod aliquid. Eius veniam officia alias nisi ducimus nobis minus?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

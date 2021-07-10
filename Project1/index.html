@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarjav Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            left: 60px;
+            top: 20px;
+            position: absolute;
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);
+        }
+        .left div{
+            text-align: center;
+            line-height: 18px;
+            font-size: 15px;
+        }
+        .mid{
+            /* border: 2px solid green; */
+            display: block;
+            margin: 20px auto;
+            width: 40%;
+        }
+        .right{
+            position: absolute;
+            right: 14px;
+            top: 35px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 25px;
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 10px;
+        }
+        .navbar li a:hover, a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .btn{
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 15px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            background-color: rgb(68, 66, 66);
+        }
+        .container{
+            border: 2px solid green;
+            margin: 106px 80px;
+            padding: 1px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 40%;
+            border-radius: 10px;
+            border-color: white;
+        }
+        .form-group input{
+            margin: 10px auto;
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 1px;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 9px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            margin: 10px auto;
+            width: 67%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Aarjav Fitness</div>
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us now</button>
+            <button class="btn">Follow us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best Gym of Palava, NOW!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
