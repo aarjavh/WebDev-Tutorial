@@ -1,0 +1,22 @@
+doctype html
+html 
+    head 
+        title Aarjav Dance Academy 
+        block scripts       
+        block style       
+            include ../static/style.css
+    body 
+        #navbar
+            ul
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | ADA
+                li #[a(href = "/") Home] 
+                li #[a(href = "/") About] 
+                li #[a(href = "/") Services] 
+                li #[a(href = "/") Class Info] 
+                li #[a(href = "/contact") Contact Us] 
+
+        block content 
+        footer#footer 
+            | Copyright © 2021 AarjavDanceAcademy.com | All rights reserved
